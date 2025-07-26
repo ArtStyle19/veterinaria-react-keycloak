@@ -1,0 +1,145 @@
+/* src/index.css */
+@import 'tailwindcss';
+
+/* Your custom CSS for the <button> tag (if you want to override Tailwind's base styles) */
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  border-color: black;
+  color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+  color: #646cff;
+  transition: 0.3s;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+@utility input {
+  /* @apply gap-2 focus:outline-none bg-white/3 border-white/10 border-1 hover:bg-blue-600/0 hover:border-white/60 hover:border-1 transition px-3 py-1 text-xs rounded px-4 shadow-md */
+
+  @apply border border-slate-300/10 rounded px-3 py-1 focus:outline-none focus:ring-1 focus:ring-white/10 text-xs;
+}
+/* --- PASTE YOUR CUSTOM UTILITY/COMPONENT CLASSES HERE --- */
+/* .input {
+} */
+
+/* @utility select {
+  @apply inline-flex items-center gap-2 bg-white/3 border-white/10 border-1 hover:bg-blue-600/0  hover:border-white/60 hover:border-1 transition px-3 py-1 text-xs rounded px-4 shadow-md;
+} */
+
+select {
+  background: rgba(255, 255, 255, 0.123);
+  border-color: rgba(255, 255, 255, 0.2);
+  @apply inline-flex items-center gap-4 border  rounded;
+}
+
+@utility btn {
+  /* @apply inline-flex items-center gap-2 rounded px-4 py-1.5 font-medium text-white bg-blue-900 hover:bg-sky-700 disabled:opacity-60; */
+  /* @apply inline-flex items-center gap-1 rounded px-4 py-1.5 font-medium text-white bg-blue-900 hover:bg-sky-700 disabled:opacity-60; */
+  @apply inline-flex items-center gap-2 bg-white/5 border-white/10 border-1 hover:bg-blue-600/0 hover:border-white/60 hover:border-1 transition-colors px-3 py-1 text-xs rounded px-4 shadow-md;
+}
+
+.btn-primary {
+  @apply btn;
+}
+
+@utility video {
+  @apply w-full rounded;
+}
+
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.qr-shaded-region {
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.qr-scan-line {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: rgba(10, 255, 200, 0.8);
+  animation: scan-line-move 2s infinite;
+}
+
+@keyframes scan-line-move {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@utility nav-link {
+  @apply hover:text-white/70 transition-colors;
+}
+
+/* .btn { */
+/* @apply px-4 py-1.5 rounded font-medium text-sm transition-colors; */
+/* } */
+.btn-primary {
+  /* @apply bg-emerald-300/0  hover:bg-white/0 hover:border-emerald-300  hover:text-emerald-300 border-emerald-300/70 text-emerald-300/70 text-xs transition-discrete; */
+  @apply bg-[#1BBCB6]  hover:bg-[#1BBCB6]/60 hover:border-[#1BBCB6]  hover:text-[#000000] border-[#1BBCB6]/100 text-black/70 text-xs font-bold transition;
+}
+
+/* a {
+  /* @apply bg-slate-600/50 hover:bg-slate-600 text-white text-xs; */
+/* @apply bg-emerald-300/0  hover:bg-white/0 hover:border-emerald-300  hover:text-emerald-300 border-emerald-300/70 text-emerald-300/70 text-xs transition-discrete; */
+/* } */
+/*  .btn-secondary { */
+/* @apply bg-slate-600/50 hover:bg-slate-600 text-white text-xs; */
+/* } */
+/* .input { */
+/* @apply bg-white/20 backdrop-blur border border-white/100 px-3 py-1 rounded w-full text-slate-100; */
+/* } */
+.shadow-glass {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+/* #qr-reader__dashboard_section_csr button {
+  @apply btn-primary;
+  margin: 0.25rem;
+} */
+
+/* tailwind.css o index.css */
+/* .video { @apply w-full rounded; } */
+
+/* --- END OF CUSTOM CLASSES --- */
