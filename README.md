@@ -1,4 +1,6 @@
-# Veterinaria React + Spring Boot + Keycloak + AI Disease Prediction
+# Veterinaria React + Spring Boot + Keycloak SPI Facial Auth + AI Disease Prediction
+
+# React + TS App
 
 ## Developed by Jorge Guillermo Olarte Quispe
 
